@@ -1,28 +1,51 @@
 html,
 body {
-	height: 100%;
+  height: 100%;
 }
 
 .wrapper {
-	display: flex;
-	flex-direction: column;
-	min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .main {
-	flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 .footer {
-	flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
-.container{
-  max-width: 1200px;
+.container {
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 20px;
 }
 
-
-
-
-
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  li {
+    margin: 13px;
+    margin-top: 45px;
+    margin-bottom: 120px;
+  }
+  button {
+    background-color: #d4eaff;
+    border: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    padding: 0;
+    font-size: 0;
+    cursor: pointer;
+  }
+  li.slick-active {
+    button {
+      background-color: #fd6655;
+      width: 12px;
+      height: 12px;
+    }
+  }
+}
