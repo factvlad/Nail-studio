@@ -16,8 +16,6 @@
     min-height: 100vh;
   }
   &__top-name {
-    display: flex;
-    align-items: center;
     padding: 5px 0 5px;
   }
   &__top {
@@ -25,6 +23,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 56px;
+justify-content: center;
   }
   &__content {
     text-align: center;
@@ -82,8 +81,6 @@
     font-size: 16px;
     line-height: 21px;
     font-weight: 700;
-    // align-items: center;
-    // text-align: center;
   }
 
   &__title {
