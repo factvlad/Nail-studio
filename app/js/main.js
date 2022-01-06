@@ -3,11 +3,13 @@ $(function () {
     $(".menu__list").toggleClass("active");
   });
 
-  $(".comment__slider").slick({
+  $(".works__slider").slick({
     dots: true,
-    arrows: false,
+    arrows: true,
     fade: true,
     autoplay: true,
+    prevArrow: "<img src='../images/prewArrow.svg' class='prev' alt='1'>",
+    nextArrow: "<img src='../images/nextArrow.svg' class='next' alt='2'>",
   });
 
   $('a[href^="#"]').on("click", function (event) {

@@ -28,14 +28,14 @@ body {
   align-items: center;
   li {
     margin: 13px;
-    margin-top: 45px;
-    margin-bottom: 120px;
+    margin-top: 64px;
+    margin-bottom: 80px;
   }
   button {
-    background-color: #d4eaff;
-    border: none;
-    width: 10px;
-    height: 10px;
+    background-color: #fff;
+    border: 2px solid #000000;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
     padding: 0;
     font-size: 0;
@@ -43,9 +43,27 @@ body {
   }
   li.slick-active {
     button {
-      background-color: #fd6655;
-      width: 12px;
-      height: 12px;
+      background-color: #e1c795;
+      width: 13px;
+      height: 13px;
     }
   }
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 30%;
+  height: 85px;
+  width: 60px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.next {
+  right: 10%;
+}
+
+.prev {
+  left: 10%;
 }
