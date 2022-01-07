@@ -272,204 +272,123 @@ img {
   }
 }
 
-// .main {
-//   background-color: #fbf8f4;
+.price {
+  background: #fcf5e9;
+  display: flex;
+  justify-content: center;
 
-//   &__description {
-//     padding-top: 120px;
-//     padding-bottom: 64px;
-//     text-align: center;
-//   }
+  &__title {
+    padding: 80px 0px 64px;
+  }
+  &__items {
+    margin-bottom: 61px;
+  }
+  &__item {
+    @extend %text-font;
+    color: $default;
+    font-size: 24px;
+    line-height: 36px;
+    padding-bottom: 32px;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 380px;
+      height: 1px;
+      background-color: #e1c795;
+      top: 50px;
+      right: 13px;
+    }
+    &:last-child {
+      padding-bottom: 0;
+      &::after {
+        width: 0;
+        height: 0;
+      }
+    }
+  }
+  &__btn {
+    display: block;
+    @extend %text-font;
+    min-width: 160px;
+    height: 40px;
+    background: $default;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 20% 80px;
+    cursor: pointer;
+    transition: 1s;
+    &:hover {
+      background-color: #fffbfa;
+      color: $default;
+      opacity: 0.89;
+    }
+  }
+  span {
+    font-weight: 700;
+  }
+}
 
-//   &__content-title {
-//     @extend %title-font;
-//     color: $default;
-//     font-size: 48px;
-//     line-height: 57px;
-//     font-weight: 600;
-//     margin-bottom: 16px;
-//     &:first-child {
-//       margin-bottom: 34px;
-//     }
-//   }
+.contact {
+  &__title {
+    padding: 80px 0px 70px;
+  }
+  &__content {
+    display: flex;
+    justify-content: center;
+  }
+  &__logo {
+    width: 566px;
+    height: 354px;
+    margin-right: 199px;
+  }
+  &__list {
+    font-size: 24px;
+    line-height: 36px;
+    @extend %text-font;
+  }
+  &__items {
+    width: 233px;
+    margin-bottom: 28px;
+    position: relative;
+  }
+  .geo::before {
+    position: absolute;
+    content: url("../images/geo.svg");
+    top: 15px;
+    left: -65px;
+  }
+  .time::before {
+    position: absolute;
+    content: url("../images/time.svg");
+    top: -5px;
+    left: -65px;
+  }
+  .phone::before {
+    position: absolute;
+    content: url("../images/phone.svg");
+    top: -5px;
+    left: -65px;
+  }
+  img {
+    filter: none;
+  }
 
-//   &__content-text {
-//     @extend %text-font;
-//     color: $default;
-//     font-size: 16px;
-//     line-height: 24px;
-//     font-weight: 400;
-//     &:nth-child(2) {
-//       margin-bottom: 120px;
-//     }
-//   }
+  &__item-social {
+    display: flex;
+    position: relative;
+    top: 0;
+    right: 57px;
+  }
+  &__items-social {
+    margin-right: 24px;
+  }
+}
 
-//   &__items {
-//     display: flex;
-//     justify-content: space-around;
-//     flex-wrap: wrap;
-//   }
-//   &__item {
-//     width: 255px;
-//     &:hover {
-//       background-color: #fffcf8;
-//     }
-//     margin-right: 30px;
-//   }
-//   &__list {
-//     text-align: center;
-//   }
-//   &__list-items {
-//     list-style: inside;
-//     @extend %text-font;
-//     color: $default;
-//     font-size: 16px;
-//     line-height: 24px;
-//     font-weight: 400;
-//     opacity: 0.7;
-//   }
-//   &__img {
-//     margin: 0 auto;
-//     padding-top: 32px;
-//     padding-bottom: 8px;
-//   }
-//   &__title {
-//     text-align: center;
-//     text-transform: uppercase;
-//     @extend %title-font;
-//     color: $default;
-//     font-size: 20px;
-//     line-height: 24px;
-//     font-weight: 400;
-//     padding-bottom: 16px;
-//   }
-// }
-// .content {
-//   &__numbers {
-//     padding-top: 165px;
-//     padding-bottom: 120px;
-//     display: flex;
-//     justify-content: center;
-//     text-align: center;
-//   }
-//   &__numbers-list {
-//     margin-right: 35px;
-//     &:nth-child(3) {
-//       margin-right: 0;
-//     }
-//   }
-//   &__numbers-title {
-//     text-align: center;
-//     text-transform: uppercase;
-//     @extend %title-font;
-//     color: $default;
-//     font-size: 48px;
-//     line-height: 57px;
-//     font-weight: 600;
-//   }
-//   &__numbers-text {
-//     @extend %text-font;
-//     color: $default;
-//     font-size: 16px;
-//     line-height: 24px;
-//     font-weight: 400;
-//   }
-// }
-// .about {
-//   background-color: #ecf6ff;
-//   &__inner {
-//     padding-top: 50px;
-//   }
-//   &__item {
-//     display: flex;
-//     padding-bottom: 16px;
-//   }
-//   &__img {
-//     // margin-top: 117px;
-//     margin-bottom: 103px;
-//     border-radius: 16px;
-//   }
-//   &__content {
-//     width: 510px;
-//     margin-left: 160px;
-//   }
-//   &__content-title {
-//     @extend %title-font;
-//     color: $default;
-//     font-size: 48px;
-//     line-height: 57px;
-//     font-weight: 600;
-//     margin-bottom: 32px;
-//   }
-//   &__content-text {
-//     @extend %text-font;
-//     color: $default;
-//     font-size: 16px;
-//     line-height: 24px;
-//     font-weight: 400;
-//     margin-bottom: 44px;
-//   }
-//   &__content-text p {
-//     margin-bottom: 8px;
-//     &:nth-child(2) {
-//       margin-bottom: 32px;
-//     }
-//   }
-//   &__content-item {
-//     list-style: inside;
-//     @extend %text-font;
-//     color: $default;
-//     font-size: 16px;
-//     line-height: 24px;
-//     font-weight: 400;
-//     margin-bottom: 12px;
-//   }
-// }
-
-// .contact {
-//   background-color: #ecf6ff;
-//   padding-bottom: 94px;
-//   &__items {
-//     display: flex;
-//   }
-
-//   &__title {
-//     @extend %title-font;
-//     color: $default;
-//     font-size: 48px;
-//     line-height: 57px;
-//     font-weight: 600;
-//     text-align: center;
-//     padding-top: 60px;
-//     margin-bottom: 52px;
-//   }
-//   &__info {
-//     display: flex;
-//     flex-direction: column;
-//     margin-left: 136px;
-//     margin-top: 52px;
-//   }
-
-//   &__info-title {
-//     @extend %title-font;
-//     color: $default;
-//     font-size: 24px;
-//     line-height: 28px;
-//     font-weight: 700;
-//     padding-bottom: 14px;
-//   }
-//   &__info-text {
-//     @extend %text-font;
-//     color: $default;
-//     font-size: 16px;
-//     line-height: 16px;
-//     font-weight: 400;
-//     margin-bottom: 40px;
-//     span {
-//       font-weight: 600;
-//     }
-//   }
-// }
 .footer {
   &__menu {
     padding: 18.5px;
@@ -484,9 +403,10 @@ img {
   }
   &__bottom-text {
     @extend %text-font;
+    color: $white;
     font-size: 16px;
     line-height: 24px;
-    color: $white;
+    font-weight: 400;
     padding-bottom: 16px;
   }
 }

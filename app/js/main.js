@@ -8,8 +8,8 @@ $(function () {
     arrows: true,
     fade: true,
     autoplay: true,
-    prevArrow: "<img src='images/prewArrow.svg' class='prev' alt='1'>",
-    nextArrow: "<img src='images/nextArrow.svg' class='next' alt='2'>",
+    prevArrow: "<img src='images/prewArrow.svg' class='prev' alt='prev'>",
+    nextArrow: "<img src='images/nextArrow.svg' class='next' alt='next'>",
   });
 
   $('a[href^="#"]').on("click", function (event) {
