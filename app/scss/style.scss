@@ -6,11 +6,24 @@
 
 h1 {
   @extend %title-font;
+  color: $default;
   font-weight: 500;
   font-size: 50px;
   line-height: 60px;
-  color: $default;
   text-align: center;
+}
+h2 {
+  @extend %text-font;
+  color: $default;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 24px;
+}
+
+span {
+  font-weight: 700;
 }
 
 img {
@@ -219,9 +232,6 @@ img {
     line-height: 24px;
     padding-bottom: 10px;
   }
-  span {
-    font-weight: 700;
-  }
 }
 
 .team {
@@ -319,7 +329,7 @@ img {
     color: #ffffff;
     font-size: 16px;
     line-height: 24px;
-    margin: 0 20% 80px;
+    margin: 0 auto 80px;
     cursor: pointer;
     transition: 1s;
     &:hover {
@@ -327,9 +337,6 @@ img {
       color: $default;
       opacity: 0.89;
     }
-  }
-  span {
-    font-weight: 700;
   }
 }
 
@@ -413,6 +420,321 @@ img {
 
 .yButton {
   display: none;
+}
+
+.prices {
+  background-image: url(../images/price_bg.jpg);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  .back__btn {
+    border: none;
+    background-color: inherit;
+    position: relative;
+    margin-top: 16px;
+    margin-left: 60px;
+  }
+  .back__link {
+    @extend %text-font;
+    color: $default;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+
+  .back__img {
+    position: relative;
+    top: 20px;
+    left: -43px;
+  }
+  &__title {
+    padding: 83px 0px 48px;
+  }
+  &__text {
+    margin: 0 auto;
+    width: 497px;
+    font-size: 16px;
+    line-height: 24px;
+    @extend %text-font;
+  }
+  p:not(:last-child) {
+    padding-bottom: 20px;
+  }
+  p:last-child {
+    padding-bottom: 72px;
+  }
+}
+
+.master {
+  background-color: #fcf5e9;
+  &__title {
+    padding: 72px 0px 28px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    padding-bottom: 36px;
+  }
+  &__goods {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 150px;
+  }
+
+  &__item {
+    width: 400px;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    @extend %text-font;
+    color: $default;
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 400px;
+      height: 1px;
+      top: 80%;
+      right: 0px;
+      border-bottom: 1px solid #e1c795;
+    }
+  }
+  &__manicure {
+    margin-right: 164px;
+  }
+  .right {
+    &::after {
+      position: absolute;
+      content: "";
+      width: 400px;
+      height: 1px;
+      top: 80%;
+      right: 0px;
+      border-bottom: 1px solid #e1c795;
+    }
+  }
+}
+
+.midl {
+  background-image: url(../images/midl_bg.jpg);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  &__title {
+    padding: 72px 0px 28px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    padding-bottom: 36px;
+  }
+  &__goods {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 150px;
+  }
+
+  &__item {
+    width: 400px;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    @extend %text-font;
+    color: $default;
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 400px;
+      height: 1px;
+      top: 80%;
+      right: 0px;
+      border-bottom: 1px solid #e1c795;
+    }
+  }
+  &__manicure {
+    margin-right: 164px;
+  }
+  .right {
+    &::after {
+      position: absolute;
+      content: "";
+      width: 400px;
+      height: 1px;
+      top: 80%;
+      right: 0px;
+      border-bottom: 1px solid #e1c795;
+    }
+  }
+}
+
+.top {
+  background-color: #fcf5e9;
+  &__title {
+    padding: 72px 0px 28px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    padding-bottom: 36px;
+  }
+  &__goods {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 150px;
+  }
+
+  &__item {
+    width: 400px;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    @extend %text-font;
+    color: $default;
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 400px;
+      height: 1px;
+      top: 80%;
+      right: 0px;
+      border-bottom: 1px solid #e1c795;
+    }
+  }
+  &__manicure {
+    margin-right: 164px;
+  }
+  .right {
+    &::after {
+      position: absolute;
+      content: "";
+      width: 400px;
+      height: 1px;
+      top: 80%;
+      right: 0px;
+      border-bottom: 1px solid #e1c795;
+    }
+  }
+}
+
+.extra {
+  background-color: #fcf5e9;
+  &__title {
+    padding: 72px 0px 56px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    padding-bottom: 36px;
+  }
+  &__goods {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 150px;
+  }
+
+  &__item {
+    width: 400px;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    @extend %text-font;
+    color: $default;
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 400px;
+      height: 1px;
+      top: 80%;
+      right: 0px;
+      border-bottom: 1px solid #e1c795;
+    }
+  }
+  &__manicure {
+    margin-right: 164px;
+  }
+  .right {
+    &::after {
+      position: absolute;
+      content: "";
+      width: 400px;
+      height: 1px;
+      top: 80%;
+      right: 0px;
+      border-bottom: 1px solid #e1c795;
+    }
+  }
+}
+
+.design {
+  background-image: url(../images/desing_bg.jpg);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  &__title {
+    padding: 72px 0px 56px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    padding-bottom: 36px;
+  }
+  &__goods {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 150px;
+  }
+
+  &__item {
+    width: 400px;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    @extend %text-font;
+    color: $default;
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 400px;
+      height: 1px;
+      top: 80%;
+      right: 0px;
+      border-bottom: 1px solid #e1c795;
+    }
+  }
+  &__manicure {
+    margin-right: 164px;
+  }
+  .right {
+    &::after {
+      position: absolute;
+      content: "";
+      width: 400px;
+      height: 1px;
+      top: 80%;
+      right: 0px;
+      border-bottom: 1px solid #e1c795;
+    }
+  }
+  .span__price {
+    text-align: right;
+    float: right;
+    margin-right: 10%;
+  }
 }
 
 // #button-up {
