@@ -416,10 +416,9 @@ img {
     font-weight: 400;
     padding-bottom: 16px;
   }
-}
-
-.yButton {
-  display: none;
+  .full {
+    padding-top: 16px;
+  }
 }
 
 .prices {
@@ -681,7 +680,7 @@ img {
   background-image: url(../images/desing_bg.jpg);
   background-position: right bottom;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 65%;
   &__title {
     padding: 72px 0px 56px;
   }
@@ -752,8 +751,12 @@ img {
 
 // #button-up:hover {
 //   cursor: pointer;
-//   background-color: #fd6655;
+//   background-color: #313131;
 //   transition: 0.3s;
+// }
+
+// .yButton {
+//   display: none;
 // }
 
 // @import "media";

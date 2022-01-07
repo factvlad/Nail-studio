@@ -40,3 +40,10 @@ $(function () {
     });
   });
 });
+let yWidgetSettings = {
+  buttonColor: "#D2B57D",
+  buttonPosition: "bottom right",
+  buttonAutoShow: true,
+  buttonText: "Онлайн запись",
+  formPosition: "right",
+};
