@@ -41,7 +41,7 @@ img {
   &__inner {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    // min-height: 100vh;
   }
   &__top-name {
     padding: 5px 0 5px;
@@ -97,6 +97,10 @@ img {
 }
 
 .menu {
+  &__btn {
+    display: none;
+  }
+
   &__list {
     display: flex;
     margin-left: 224px;
@@ -157,7 +161,7 @@ img {
   h2 {
     position: absolute;
     top: 30px;
-    left: 40px;
+    left: 20px;
     width: 100%;
   }
 }
@@ -398,7 +402,7 @@ img {
 
 .footer {
   &__menu {
-    padding: 18.5px;
+    padding-top: 18.5px;
     li:first-child {
       margin-left: 90px;
     }
@@ -406,18 +410,33 @@ img {
   &__bottom {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     background: rgba(3, 3, 3, 0.8);
   }
   &__bottom-text {
+    margin: 0 auto;
     @extend %text-font;
     color: $white;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 24px;
     font-weight: 400;
     padding-bottom: 16px;
   }
   .full {
     padding-top: 16px;
+  }
+  &__creater {
+    @extend %text-font;
+    color: $white;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+  }
+
+  &-creater__link {
+    text-decoration: underline;
+    color: rgb(131, 125, 127);
   }
 }
 
@@ -755,8 +774,8 @@ img {
 //   transition: 0.3s;
 // }
 
-// .yButton {
-//   display: none;
-// }
+.yButton {
+  display: none;
+}
 
-// @import "media";
+@import "media";

@@ -20,26 +20,27 @@ $(function () {
     $("html, body").animate({ scrollTop: dn }, 1000);
   });
 
-  $(document).ready(function () {
-    var button = $("#button-up");
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > 300) {
-        button.fadeIn();
-      } else {
-        button.fadeOut();
-      }
-    });
-    button.on("click", function () {
-      $("body, html").animate(
-        {
-          scrollTop: 0,
-        },
-        800
-      );
-      return false;
-    });
-  });
+  // $(document).ready(function () {
+  //   var button = $("#button-up");
+  //   $(window).scroll(function () {
+  //     if ($(this).scrollTop() > 300) {
+  //       button.fadeIn();
+  //     } else {
+  //       button.fadeOut();
+  //     }
+  //   });
+  //   button.on("click", function () {
+  //     $("body, html").animate(
+  //       {
+  //         scrollTop: 0,
+  //       },
+  //       800
+  //     );
+  //     return false;
+  //   });
+  // });
 });
+
 let yWidgetSettings = {
   buttonColor: "#D2B57D",
   buttonPosition: "bottom right",
