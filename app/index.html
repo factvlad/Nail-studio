@@ -13,6 +13,7 @@
     href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,500&family=Open+Sans:wght@400;500;600;700&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="css/all.css">
 </head>
 
 <body>
@@ -23,7 +24,7 @@
     <div class="header__inner" id="mainid">
       <div class="header__top">
         <div class="header__top-name">
-          <img class="menu__img" src="./images/Logo.png" alt="logo" />
+         <a href="index.html"> <img class="menu__img" src="./images/Logo.png" alt="logo" /></a>
           <button class="menu__btn">
             <span></span>
           </button>
@@ -56,9 +57,7 @@
           <h1 class="header__title">
             Отдохните от суеты и посвятите время себе
           </h1>
-          <button class="header__btn">
-            <a href="#" target="_blank"> Запись онлайн </a>
-          </button>
+          <a href="#" class="header__btn ms_booking">Записаться онлайн</a>
         </div>
       </div>
     </div>
@@ -73,10 +72,20 @@
             <a class="service__item" href="#">
               <img src="images/servise/Manicure.jpg" alt="Brows" />
               <h2 class="service__item-title">Маникюр</h2>
+              <div class="test">
+                <span class="test__title">Маникюр</span>
+                <ul class="test__list">
+                  <li class="test__item">с покрытием и без</li>
+                  <li class="test__item">коррекция</li>
+                  <li class="test__item">наращивание</li>
+                  <li class="test__item">дизайн</li>
+                </ul>
+                <a class="test__btn">Подробнее</a>
+              </div>
             </a>
             <a class="service__item" href="#">
               <img src="images/servise/Pedicure.jpg" alt="Pedicure" />
-              <h2 class="service__item-title">Педекюр</h2>
+              <h2 class="service__item-title">Педикюр</h2>
             </a>
             <a class="service__item" href="#">
               <img src="images/servise/Brows.jpg" alt="Browsges" />
@@ -149,7 +158,6 @@
             </ul>
           </div>
         </div>
-      </div>
       </div>
     </section>
 
@@ -250,14 +258,14 @@
             <li class="price__item">Брови — от <span>200</span> грн</li>
             <li class="price__item">Ресницы — от <span>450</span> грн</li>
           </ul>
-          <button class="price__btn"> <a href="price.html"> Подробнее</a></button>
+          <a class="price__btn" href="price.html"> Подробнее</a>
         </div>
       </div>
     </section>
 
     <section class="contact" id="contactid">
       <div class="container">
-        <h1 class="contact__title" id="contactid">Наши контакты</h1>
+        <h1 class="contact__title" id="">Наши контакты</h1>
         <div class="contact__content">
           <div class="contact__logo"><img src="images/Full_logo.png" alt="logo"></div>
           <div class="contact__list">
@@ -271,14 +279,13 @@
                   996-64-68</a></li>
             </ul>
             <div class="contact__item-social">
-              <a class="contact__items-social" href=""> <img src=" ./images/social/viber.svg" alt="social"></a>
+              <a class="contact__items-social" href="viber://chat?number=+380950000000"> <img src=" ./images/social/viber.svg" alt="social"></a>
               <a class="contact__items-social" href=""> <img src=" ./images/social/phone2.svg" alt="social"></a>
               <a class="contact__items-social" href=""> <img src=" ./images/social/teleg.svg" alt="social"></a>
               <a class="contact__items-social" href=""> <img src=" ./images/social/inst.svg" alt="social"></a>
             </div>
           </div>
         </div>
-      </div>
       </div>
     </section>
 
@@ -307,7 +314,7 @@
     </div>
     <div class="footer__bottom">
       <p class="footer__bottom-text full">
-        © 2021 Irina Shkrytiuk Nail Studio Все права защищены
+        © 2022 Irina Shkrytiuk Nail Studio Все права защищены
       </p>
       <div class="footer__creater">
         <p>

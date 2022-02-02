@@ -52,18 +52,62 @@ body {
 
 .prev,
 .next {
-  position: absolute;
-  top: 30%;
-  height: 85px;
-  width: 60px;
+  height: 150px;
+  width: 100px;
+  z-index: 1;
+}
+
+.path-next,
+.path-prev {
+  filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.15));
+  &.actived {
+    fill: #e1c795;
+  }
+}
+
+.slick-prev,
+.slick-next {
+  top: 16%;
+  width: 200px;
+  height: 200px;
   z-index: 1;
   cursor: pointer;
+  background-color: transparent;
+  border: none;
+  position: absolute;
 }
 
-.next {
-  right: 10%;
+.slick-prev {
+  left: 7%;
+}
+.slick-next {
+  right: 7%;
 }
 
-.prev {
-  left: 10%;
+.service__item {
+  position: relative;
+}
+.test {
+  // display: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.78);
+  padding: 5px;
+  &__list {
+    ul {
+      list-style: inside;
+    }
+  }
+  &__item {
+    @extend %text-font;
+    color: $white;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+.service__item:hover .test {
+  display: block;
 }
