@@ -41,7 +41,7 @@ img {
   &__inner {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    // min-height: 100vh;
   }
   &__top-name {
     padding: 5px 0 5px;
@@ -51,6 +51,10 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.25));
   }
   &__content {
     text-align: center;
@@ -58,7 +62,7 @@ img {
   &__biglogo-img {
     margin: 0 auto;
     align-items: center;
-    margin-top: 56px;
+    margin-top: 112px;
     margin-bottom: 115px;
   }
   &__title {
@@ -161,13 +165,19 @@ img {
       width: 100%;
       height: 100%;
     }
+    &-title {
+      @extend %title-font;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 46px;
+    }
   }
 
   h2 {
     position: absolute;
     top: 30px;
-    left: 20px;
-    width: 100%;
+    left: 35px;
+    text-align: left;
   }
 }
 
@@ -412,8 +422,10 @@ img {
 .footer {
   &__menu {
     padding-top: 18.5px;
-    li:first-child {
-      margin-left: 90px;
+    margin-top: 50px;
+    margin-left: 145px;
+    li:last-child {
+      margin-right: 141px;
     }
   }
   &__bottom {
@@ -459,7 +471,7 @@ img {
     border: none;
     background-color: inherit;
     position: relative;
-    margin-top: 16px;
+    margin-top: 80px;
     margin-left: 60px;
   }
   .back__link {

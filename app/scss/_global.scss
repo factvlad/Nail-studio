@@ -84,4 +84,70 @@ body {
   right: 7%;
 }
 
-
+.holder {
+  position: relative;
+}
+.block {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 5px;
+  display: none;
+  &__title {
+    color: $white;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 46px;
+  }
+  ul {
+    list-style-type: disc;
+  }
+  &__list {
+    position: absolute;
+    left: 70px;
+    top: 100px;
+  }
+  &__title {
+    @extend %title-font;
+  }
+  &__item {
+    @extend %text-font;
+    color: $white;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  &__btn {
+    display: block;
+    @extend %text-font;
+    font-size: 24px;
+    line-height: 36px;
+    width: 160px;
+    height: 40px;
+    background: $white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    border: none;
+    color: $default;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: 1s;
+    text-align: center;
+    margin: 10px auto;
+    position: relative;
+    top: 280px;
+    &:hover {
+      background-color: rgba(225, 199, 149, 1);
+      color: $default;
+      opacity: 0.89;
+    }
+  }
+}
+.holder:hover .block {
+  display: block;
+}
