@@ -84,30 +84,4 @@ body {
   right: 7%;
 }
 
-.service__item {
-  position: relative;
-}
-.test {
-  // display: none;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  top: 0;
-  background: rgba(0, 0, 0, 0.78);
-  padding: 5px;
-  &__list {
-    ul {
-      list-style: inside;
-    }
-  }
-  &__item {
-    @extend %text-font;
-    color: $white;
-    font-size: 24px;
-    line-height: 36px;
-  }
-}
-.service__item:hover .test {
-  display: block;
-}
+
