@@ -73,11 +73,7 @@
       }
     }
   }
-  // .footer {
-  //   &__list {
-  //     margin-right: 50px;
-  //   }
-  // }
+
 }
 
 @media (max-width: 1140px) {
@@ -120,14 +116,16 @@
 }
 
 @media (max-width: 960px) {
+
+  .header__top{
+    height: 60px;
+  }
   .footer__menu li:first-child {
     margin-left: 0px;
   }
   .menu {
     &__img {
-      max-height: 40px;
-      margin: 0 auto;
-      margin-left: 0;
+    display: none;
     }
     &__h1 {
       font-size: 18px;
@@ -138,14 +136,14 @@
       border: none;
       display: block;
       width: 40px;
-      z-index: 20;
+      z-index: 50;
       cursor: pointer;
       padding: 0;
       position: absolute;
       right: 20px;
       top: 16px;
       height: 20px;
-
+  
       span {
         display: block;
         height: 2px;
@@ -171,20 +169,20 @@
     }
     &__list {
       transform: translateY(-150%);
-      display: block;
+      display: inline-block;
+      justify-content: center;
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
-      background-color: rgba(241, 241, 241, 0.98);
-      width: 100%;
-      height: 35%;
+      background-color: rgba(241, 241, 241, );
       text-align: center;
       margin: 0 auto;
       transition: all 0.7s ease-in-out;
       &.active {
         transform: translateY(0%);
-        padding: 25px;
+        padding: 50px;
+        z-index: 5;
       }
     }
     &__link {
@@ -194,8 +192,9 @@
       font-size: 16px;
       line-height: 29px;
       font-weight: 600;
+      margin-bottom: 12px;
       &:hover {
-        color: rgb(230, 230, 230);
+        color: #e1c795;
       }
     }
     &__list-item {
@@ -241,6 +240,12 @@
     .next {
       display: none !important;
     }
+  }
+
+  .footer {
+  nav {
+    display: none;
+  }
   }
 }
 
@@ -363,12 +368,16 @@
       line-height: 25px;
       padding-bottom: 29px;
       &::after {
-        width: 280px;
+        width: 200px;
       }
+    }
+    &__btn{
+      margin: 0 0 80px;
     }
   }
   .prices {
     &__text {
+      text-align: center;
       width: 370px;
       font-size: 14px;
       line-height: 20px;
@@ -493,7 +502,9 @@
   }
 }
 
-@media (max-width: 420px) {
+
+
+@media (max-width: 430px) {
   .header {
     &__biglogo-img {
       margin-bottom: 55px;
