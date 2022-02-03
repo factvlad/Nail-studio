@@ -422,33 +422,13 @@ img {
 }
 
 .footer {
-  &__menu {
-    padding-top: 20px;
-  }
-  &__list {
-    display: flex;
-    margin-left: 275px;
-  }
-
-  &__list-item {
-    margin-right: 100px;
-    &:last-child {
-      margin-left: 0px;
-    }
-  }
-
-  &__link {
-    @extend %text-font;
-    color: $white;
-    font-size: 16px;
-    line-height: 21px;
-    font-weight: 700;
-    &:hover {
-      color: #e1c795;
-    }
-  }
-
+ .menu  {
+&__list-item{
+margin: 0 auto;
+}
+ }
   &__bottom {
+    padding-top: 32px;
     display: flex;
     justify-content: center;
     flex-direction: column;
