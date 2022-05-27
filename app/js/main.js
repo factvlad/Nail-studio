@@ -1,4 +1,10 @@
 $(function () {
+
+  $(window).on("load", function () {
+    $(".loader").fadeOut();
+    $("#preloder").delay(200).fadeOut("slow");
+  });
+
   $(".menu__btn").on("click", function () {
     $(".menu__list").toggleClass("active");
   });
