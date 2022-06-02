@@ -73,7 +73,6 @@
       }
     }
   }
-
 }
 
 @media (max-width: 1140px) {
@@ -116,8 +115,7 @@
 }
 
 @media (max-width: 960px) {
-
-  .header__top{
+  .header__top {
     height: 60px;
   }
   .footer__menu li:first-child {
@@ -125,7 +123,7 @@
   }
   .menu {
     &__img {
-    display: none;
+      display: none;
     }
     &__h1 {
       font-size: 18px;
@@ -143,7 +141,7 @@
       right: 20px;
       top: 16px;
       height: 20px;
-  
+
       span {
         display: block;
         height: 2px;
@@ -175,7 +173,7 @@
       top: 0;
       left: 0;
       right: 0;
-      background-color: rgba(241, 241, 241, );
+      background-color: rgba(241, 241, 241);
       text-align: center;
       margin: 0 auto;
       transition: all 0.7s ease-in-out;
@@ -243,9 +241,9 @@
   }
 
   .footer {
-  nav {
-    display: none;
-  }
+    nav {
+      display: none;
+    }
   }
 }
 
@@ -371,7 +369,7 @@
         width: 200px;
       }
     }
-    &__btn{
+    &__btn {
       margin: 0 0 80px;
     }
   }
@@ -502,8 +500,6 @@
   }
 }
 
-
-
 @media (max-width: 430px) {
   .header {
     &__biglogo-img {
@@ -565,21 +561,31 @@
 }
 
 @media (max-width: 395px) {
+  .prices {
+    &__text {
+      width: 270px;
+    }
+  }
+  .header {
+    &__inner {
+      min-height: unset;
+    }
+  }
   .master,
   .midl,
   .top,
   .design,
   .extra {
     &__text {
-      width: 320px;
-      font-size: 14px;
+      width: 260px;
+      font-size: 16px;
     }
     &__item {
-      width: 320px;
+      width: 280px;
       font-size: 13px;
     }
     .right::after {
-      width: 280px;
+      width: 285px;
     }
     &__item {
       &::after {
@@ -599,6 +605,7 @@
     }
     &__item-social {
       padding-top: 15px;
+      right: -20px;
     }
     &__title {
       padding: 35px 0 35px;
@@ -613,6 +620,54 @@
     &__items {
       font-size: 17px;
       line-height: 23px;
+      width: 165px;
+    }
+    &__list {
+      margin: 0;
+    }
+  }
+  .block {
+    &__item {
+      font-size: 18px;
+      line-height: 23px;
+      position: relative;
+      left: -30px;
+      top: -25px;
+    }
+    &__btn {
+      top: 190px;
+    }
+  }
+  .about {
+    img {
+      width: 100%;
+    }
+    &__content {
+      max-width: 260px;
+    }
+  }
+  .instrument {
+    &__list {
+      max-width: 260px;
+    }
+    &__text {
+      padding-bottom: 25px;
+    }
+  }
+  .works .slick-dots li {
+    margin: 10px;
+  }
+  .price {
+    &__item {
+      font-size: 15px;
+      &::after {
+        right: 53px;
+      }
+    }
+  }
+  .footer {
+    p {
+      font-size: 10px;
     }
   }
 }

@@ -2,7 +2,7 @@ $(function () {
 
   $(window).on("load", function () {
     $(".loader").fadeOut();
-    $("#preloder").delay(200).fadeOut("slow");
+    $("#preloder").delay(300).fadeOut("slow");
   });
 
   $(".menu__btn").on("click", function () {
